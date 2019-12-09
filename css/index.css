@@ -235,7 +235,10 @@ section.main{
 .list{
 	padding-left: 3%;
 }
-@media(max-width:800px){
+
+/*TABLET MODE*/
+
+@media(max-width: 800px){
     .headerpic{
         display:none;
         width:0;
@@ -259,7 +262,51 @@ section.main{
         justify-content: center;
         margin-bottom: 3%;
     }
+}
 
+/*MOBILE VERSION*/
 
+@media(max-width: 500px){
+    .headerpic{
+        display:none;
+        width:0;
+        margin-bottom:2%;
+    }
+    .headertext{
+        margin-left: 10% ;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    nav{
+        flex-direction: column-reverse;
+    }
+    nav .navbar{
+        
+        flex-direction: column;
+    }
+    nav a{
+        border-top: .5px solid black;
+        border-bottom: .5px solid black;
+        padding: 4%;
+        font-size:20px;
+    }
+    .content1{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top:5%;
+    }
+    .sections{
+        width:100%;
+        padding: 3%;
+    }
+    .content2{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top:5%;
+    }
+    .sections2{
+        width:100%;
+        padding: 3%;
+    }
 }
 
